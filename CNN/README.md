@@ -7,7 +7,7 @@ Architectures: https://www.youtube.com/watch?v=DAOcjicFr1Y
 
 **How to choose filter size?**
 
-Use small filters. 3 * 3 (majorly) or 5 * 5 (sometimes). Lesser number of parameters. You can have the receptive field of  7 * 7 filter by using two layers of 3 * 3 filters. Advantages: No. of parameters is reduced. Increased non linearity. 
+Use small filters. 3 * 3 (majorly) or 5 * 5 (sometimes). You can have the receptive field of  7 * 7 filter by using two layers of 3 * 3 filters. Advantages: No. of parameters is reduced. Increased non linearity. 
 
 **How to choose the number of filters?**
 
@@ -16,7 +16,7 @@ As the depth increases, the layers capture more and more complex information. Yo
 
 **How do I understand what my ConvNet is doing?** 
 
-Visualize: PLot images of your filters and the intermediate outputs. 
+Visualize: Plot images of your filters and the intermediate outputs. 
 
 **How do I not overfit my ConvNet?**
 
@@ -37,4 +37,6 @@ Initially (for a couple of epochs), use smaller batch sizes (like 4, 8 or 16). Y
 
 Then use higher batch sizes (64, 128, ..). You now have better gradient estimates and your gradient update rule will help you move closer to the minimum.
 
-For the first couple of epochs, try different initializations and check which does better. Choose the best. Then for the next few epochs you can try different learning rates. Later, you can optimize your other hyperparameters (like dropout rate). This way of training is called babysitting. Always save and test your model after a few epochs.
+For the first couple of epochs, try different initializations and check which does better. Choose the best. Then for the next few epochs you can try different learning rates. Later, you can optimize your other hyperparameters (like dropout rate). This way of training is called babysitting.
+
+Always save and test your model after a few epochs.
