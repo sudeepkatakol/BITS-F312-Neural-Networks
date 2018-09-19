@@ -37,7 +37,7 @@ Adam with default setting works most of the times.
 
 **Tips for training:** 
 
-Resize your images to a common height and width. Normalise your images to [-1, 1]. {image = 2 * (np.cast(image, np.float32)/255.) - 0.5)} 
+Resize your images to a common height and width. Normalise your images to [-1, 1] {image = 2 * (np.cast(image, np.float32)/255.) - 0.5)} or [0, 1] {image = image/255.}
 
 Initially (for a couple of epochs), use smaller batch sizes (like 4, 8 or 16). You have noisy and inaccurate estimates of gradients but they have enough information to get you near the vicinity of minimum. 
 
